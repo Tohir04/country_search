@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Search</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="fetchapi.js"></script>
+
+</head>
+<body>
+  <nav class="navbar" style="top: -7%;">
+    <div class="container">
+        <div class="logo"></div>
+        <div id="datetime" class="datetime"></div>
+        <div><input type="text" id="SearchData" placeholder="Enter Country" style="top: 25%;">
+          <button onclick="buttonClicked()">Search</button></div>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="menu" id="menu">
+            <li></li>
+            <li><a href="country.html">Top Best Place</a></li>
+            <li><a href="calendar.html">Event</a></li>
+            <li><a href="#">Services</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <div class="container">
+    <h1>🌍 Country Information 🌍</h1><br>
+    <p style="margin-bottom: -1px;">Discover information about any country!</p>
+    
+    <table id="countryInfo" style="background-color: rgb(174, 176, 177);">
+      <tr>
+        <th>Flag</th>
+        <td id="flag"></td>
+      </tr>
+      <tr>
+        <th>Country</th>
+        <td id="City"></td>
+      </tr>
+      <tr>
+        <th>Capital</th>
+        <td id="Capital"></td>
+      </tr>
+      <tr>
+        <th>Region</th>
+        <td id="region"></td>
+      </tr>
+      <tr>
+        <th>Subregion</th>
+        <td id="subregion"></td>
+      </tr>
+      <tr>
+        <th>Currencies</th>
+        <td id="currencies"></td>
+      </tr>
+      <tr>
+        <th>Timezone</th>
+        <td id="timezone"></td>
+      </tr>
+      <tr>
+        <th>Population</th>
+        <td id="population"></td>
+      </tr>
+      <tr>
+        <th>Location</th>
+        <td id="location"></td>
+      </tr>
+      <tr>
+        <th>Languages</th>
+        <td id="languages"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

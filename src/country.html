@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Travel Place</title>
+    <link rel="stylesheet" href="country.css">
+    <style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 200px;
+        z-index: 1;
+        border: 1px solid #ddd;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .show {
+        display: block;
+    }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"></div>
+            <div class="menu-toggle" id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calendar.html">Event</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1>Top Best Asian Country to Travel in 2024</h1>
+
+    <!-- Search bar container -->
+    <div class="search-container">
+        <div class="dropdown">
+            <input type="text" id="searchInput" placeholder="Search for a country...">
+            <div id="searchDropdown" class="dropdown-content"></div>
+        </div>
+        <button id="searchButton" onclick="searchCountry()">Search</button>
+    </div>
+
+    <!-- Table of travel places -->
+    <table id="travelTable" class="collapsible-table">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Image</th>
+                <th onclick="sortTable(1)">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="image/vietnam.jpeg" alt="lion singapore" loading="lazy"></td>
+                <td>
+                    <p>Vietnam, officially the Socialist Republic of Vietnam, is the easternmost country on the Indochina Peninsula in Southeast Asia. With approximately 94.6 million inhabitants as of 2016, it is the 14th most populous country in the world, and the 9th most populous Asian country.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td><img src="image/japan.jpeg" alt="japan" loading="lazy"></td>
+                <td>
+                    <p>Japan is an island country in East Asia. It is in the northwest Pacific Ocean and is bordered on the west by the Sea of Japan, extending from the Sea of Okhotsk in the north toward the East China Sea, and Taiwan in the south. Japan is a part of the Ring of Fire, and spans an archipelago of 14,125 islands, with the five main islands being Hokkaido, Honshu (the "mainland"), Shikoku, Kyushu, and Okinawa. Tokyo is the country's capital and largest city, followed by Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto.</p>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><img src="image/malaysia.jpeg" alt="langkawi" loading="lazy"></td>
+                <td>
+                    <p>The country is multiethnic and multicultural, which has a significant effect on its politics. About half the population is ethnically Malay, with minorities of Chinese, Indians, and indigenous peoples. The official language is Malaysian Malay, a standard form of the Malay language. English remains an active second language. While recognising Islam as the official religion, the constitution grants freedom of religion to non-Muslims. The government is modelled on the Westminster parliamentary system, and the legal system is based on common law. The head of state is an elected monarch, chosen from among the nine state sultans every five years. The head of government is the prime minister.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td><img src="image/timor-leste.jpeg" alt="bangkok" loading="lazy"></td>
+                <td>
+                    <p>East Timor also known as Timor-Leste, officially the Democratic Republic of Timor-Leste, is a country in Southeast Asia. It comprises the eastern half of the island of Timor - of which the western half is administered by Indonesia - the exclave of Oecusse on the island's north-western half, and the minor islands of Atauro and Jaco. Australia is the country's southern neighbour, separated by the Timor Sea. The country's size is 14,874 square kilometres (5,743 sq mi). Dili is its capital and largest city.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td><img src="image/filipina.jpeg" alt="london" loading="lazy"></td>
+                <td>
+                    <p>The Philippines [fi-li-pi-na] or officially the Republic of the Philippines is a sovereign unitary island nation in Southeast Asia. Located in the western Pacific Ocean, it consists of approximately 7,641 islands divided into three regions, namely Luzon, Visayas, and Mindanao.</p>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <button id="toggleTableBtn" class="show-more-btn" onclick="toggleTable()">Show More</button>
+    <script src="fetchapi2.js"></script>
+
+    <script src="fetchapi2.js"></script>
+</body>
+</html>
